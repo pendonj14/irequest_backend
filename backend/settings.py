@@ -156,4 +156,9 @@ MEDIA_URL = '/media/'
 # Path where media is stored on your computer
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 
-CORS_ALLOW_ALL_ORIGINS = True
+
+CORS_ALLOWED_ORIGINS = [
+    "https://irequest-nu.vercel.app/login",
+    "https://irequest-nu.vercel.app",
+    "https://irequest-nu.vercel.app/"
+]
